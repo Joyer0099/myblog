@@ -7,5 +7,6 @@ class Article(models.Model):
     content = models.TextField(null=True)
     pub_time = models.DateTimeField(null=True)
 
+    # make the name show on the web
     def __str__(self):
         return self.title
